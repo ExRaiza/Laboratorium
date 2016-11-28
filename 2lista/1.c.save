@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main(void){
+    int zloty;
+    int grosze;
+    int bills[5] = {10,20,50,100,200};
+    int how_manyB[5];
+    float coins[6] = {0.1,0.2,0.5,1,2,5};
+    int how_manyC[6];
+    printf("Please enter odd money\n");
+    printf("Zloty: ");
+    scanf("%d", &zloty);
+    printf("Grosze: ");
+    scanf("%d", &grosze);
+    while(zloty >= 10){
+        for(int i=4;i>0;i--){
+            if(zloty>bills[i]){
+                zloty-=bills[i];
+                             how_manyB[i]=how_manyB[i]+1;
+                printf("Odjęto %d \n", bills[1]);
+            }
+        }
+    }
+    printf("Doszło \n");
+    for(int i=0;i<5;i++){
+        printf("%d",how_manyB[i]);
+    }
+    printf("%d",zloty);
+}
