@@ -6,7 +6,7 @@ int main(){
     char napis[50];
 
     printf("Wpisz słowo by sprawdzić czy jest palindromem: ");
-	scanf("%s",napis);
+	 scanf("%s",napis);
 
     if(palindrom(napis))
         printf("Jest palindromem\n");
@@ -15,4 +15,3 @@ int main(){
 
     return 0;
 }
-
